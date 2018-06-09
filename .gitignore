@@ -1,0 +1,4 @@
+# Fichiers à ignorer
+images/
+node_modules/
+package-lock.json
