@@ -1,0 +1,177 @@
+body {
+    font-family:'Montserrat', 'sans-serif';
+    background-color:#303030;
+}
+h1 {
+    text-align: center;
+    text-transform:uppercase;
+    word-spacing:5px;
+}
+nav {
+    text-transform: uppercase;
+    background-color:#303030;
+    display:flex;
+    justify-content:flex-end;
+}
+nav ul {
+   margin:0px;
+   padding:0px;
+    /*
+   background-color:tomato;
+    */
+   list-style: none;
+}
+nav a {
+   padding:1em;
+   display: block;
+   text-align:center;
+   text-decoration:none;    
+}
+nav #menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+}
+@media(max-width: 600px) {
+    nav #menu {
+         justify-content: flex-start;
+         flex-flow: column wrap; /*4*/
+    }
+    nav #menu li {
+        flex-basis:0%;
+    }
+}
+a {
+    color:white;
+}
+#bienvenue {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    /*
+    background-image:url("../images/pexels-photo-169573.jpeg") repeat;
+    */
+    text-transform:uppercase;
+  
+}
+#bienvenue h1 {
+    margin:0;
+}
+#bienvenue h2 {
+        word-spacing:5px;
+       margin: 10 0 20 0;
+}
+button {
+    padding:5px 20px;
+    color: white;
+    border:1px solid white;
+    background:none;
+    margin-bottom:50px;
+}
+#containerAbout {
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#B8B8B8;
+}
+#containerCompetences { 
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#303030;
+}
+#listeSkills {
+    display:flex;
+    justify-content: space-between;
+   
+}
+ @media(max-width: 600px) {
+     #listeSkills {
+          flex-flow: column wrap; /*4*/
+          align-content: flex-start;
+    }
+ }
+     
+.content {
+    padding:4em;
+    box-sizing: border-box;
+    flex-basis:30%;
+}
+
+.containerIcones {
+    display:grid;
+    grid-column-gap: 35px;
+    grid-template-columns: repeat(2,1fr);
+  
+}
+h3 {
+    text-align: center;
+}
+.containerIcones i {
+    font-size:4.2rem;
+    padding:0 auto;
+    margin-bottom:40px;
+}
+#plusAvenir {
+    text-align: center;
+}
+#containerProjets {
+    display:flex;
+    flex-direction:column;
+    background-color:#B8B8B8;
+    color:white;
+    text-align: center;
+}
+#containerContact {
+    color:white;
+    background-color:#303030;
+}
+#contact {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+}
+#reseaux {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+  @media(max-width: 600px) {
+      #reseaux {
+             flex-flow: column wrap; /*4*/
+             justify-content: center;
+      }
+  }
+#reseaux i {
+    flex-basis: 30%;
+}
+#reseaux i:hover {
+    color:rgb(217,1,21);
+}
+footer {
+    background-color:#B8B8B8;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+footer a {
+    color:rgba(255, 0, 0, 0.534);
+}
+/* 
+        LISTE DES HOVERS
+*/
+/*
+.containerIcones i:hover {
+    color: red;
+    --webkit-transition: width 2s;
+    transition: width 2s;
+}
+*/
