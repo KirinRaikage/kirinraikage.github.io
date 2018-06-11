@@ -7,11 +7,17 @@ h1 {
     text-transform:uppercase;
     word-spacing:5px;
 }
+#leHaut {
+    display:flex;
+    justify-content: flex-end;
+    opacity: 0.6;
+}
 nav {
+    align-self: right;
+    position:fixed;
     text-transform: uppercase;
     background-color:#303030;
     display:flex;
-    justify-content:flex-end;
 }
 nav ul {
    margin:0px;
